@@ -134,6 +134,30 @@ Large Vision-Language Models (VLMs) enable strong multimodal reasoning but incur
 </section>
 
 
+<!-- Motivation Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Motivation</h2>
+    <div class="content has-text-justified">
+      <p>
+        Existing visual token pruning methods often rely on attention scores or diversity heuristics.
+        However, attention can be unstable across layers and heads, while diversity alone does not
+        directly reflect task relevance. As a result, prior methods may fail to capture how individual
+        tokens truly affect the model output.
+      </p>
+      <p>
+        ZOO-Prune is motivated by a simple question: which visual tokens most strongly influence the
+        final prediction? To answer this, we estimate token sensitivity through zeroth-order perturbations,
+        yielding an output-aware and training-free importance signal without requiring backpropagation.
+      </p>
+    </div>
+
+    <div class="has-text-centered" style="margin-top: 24px;">
+      <img src="./static/images/motivation.png" style="max-width:85%; height:auto;">
+    </div>
+  </div>
+</section>
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
